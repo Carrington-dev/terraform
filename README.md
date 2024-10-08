@@ -12,3 +12,9 @@ export TF_LOG=TRACE
 terraform init 
 # same as git init
 ```
+
+## Dependencies (ssh)
+```bash
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_git_key
+```
