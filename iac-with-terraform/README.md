@@ -1,9 +1,13 @@
-## Steps Taken
+## Key Concepts
 
 1. init
 2. plan
-3. apply
    ```bash
-    It's used to update the existing code and deploy the infrastructure
+   it plan the deployment that'll be executed with """plan"""
+   ```
+4. apply
+   ```bash
+   It's used to update the existing code and deploy the infrastructure
+   it will execute the deployment
    ```
 5. destroy
