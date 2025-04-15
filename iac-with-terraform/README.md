@@ -11,3 +11,6 @@
    it will execute the deployment
    ```
 5. destroy
+    ```bash
+   it will destroy the deployed infrastructure
+   ```
