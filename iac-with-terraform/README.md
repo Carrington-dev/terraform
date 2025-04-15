@@ -3,4 +3,7 @@
 1. init
 2. plan
 3. apply
-4. destroy
+   ```bash
+    It's used to update the existing code and deploy the infrastructure
+   ```
+5. destroy
