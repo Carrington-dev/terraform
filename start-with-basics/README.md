@@ -8,3 +8,9 @@ Terraform can install and use them.
 5. You can write your own Providers.
 6. Terraform finds and Install Providers as you Initialize Terraform (using terraform init command).
 7. As a Best Practice Providers should be versioned in your Terraform config files.
+
+```bash
+provider "aws" {
+  region = "us-east-1"  # Change to your preferred region
+}
+```
