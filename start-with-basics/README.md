@@ -14,3 +14,6 @@ provider "aws" {
   region = "us-east-1"  # Change to your preferred region
 }
 ```
+
+## Terraform State
+__The terraform state file should never be lost as it is responsible for recording the created resources in the cloud provider__
