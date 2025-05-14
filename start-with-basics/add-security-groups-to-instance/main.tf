@@ -18,9 +18,11 @@ data "aws_vpc" "default" {
 
 resource "aws_instance" "MyT2MicroInstanceAWS" {
   count         = 4
-  ami           = "ami-084568db4383264d4"
+  ami           = lookup(var.AWS_AMIs, var.AWS_REGION)
   instance_type = "t2.micro"
-  vpc_security_group_ids = [aws_security_group.allow_ssh_http.id]
+  # works just fine but we want to test other ways
+  # vpc_security_group_ids = [aws_security_group.allow_ssh_http.id, ]
+  vpc_security_group_ids = var.AWS_SECURITY_GROUP  # ✅ CORRECT usage
 
   tags = {
     Name = "MyT2MicroInstanceAWS-${count.index}"
@@ -59,3 +61,4 @@ resource "aws_security_group" "allow_ssh_http" {
     Name = "allow_ssh_http"
   }
 }
+
