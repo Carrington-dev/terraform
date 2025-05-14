@@ -19,7 +19,6 @@ variable "AWS_SECURITY_GROUP" {
   type        = list
   description = "AWS Security Groups"
   default = [
-    "sg-12345",
-    "sg-45634",
+    "sg-08454efbd68c4e545",
   ]
 }
