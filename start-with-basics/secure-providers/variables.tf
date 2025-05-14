@@ -14,3 +14,12 @@ variable "AWS_REGION" {
   type        = string
   description = "AWS region"
 }
+
+variable "AWS_SECURITY_GROUP" {
+  type        = list
+  description = "AWS Security Groups"
+  default = [
+    "sg-12345",
+    "sg-45634",
+  ]
+}
