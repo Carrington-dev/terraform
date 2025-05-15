@@ -2,11 +2,8 @@
 ### Terraform : Deployment Automation
 
 * Subnet in VPC -
-* Virtual private cloud (VPC) is a virtual network dedicated to
-your AWS account. It is logically isolated from other virtual
-networks in the AWS Cloud.
-* When you create a VPC, you must specify a range of IPv4
-addresses for the VPC in the form of a Classless InterDomain Routing (CIDR) block.
+* Virtual private cloud (VPC) is a virtual network dedicated tO your AWS account. It is logic isolated from other virtual networks in the AWS Cloud.
+* When you create a VPC, you must specify a range of IPv4 addresses for the VPC in the form of a Classless InterDomain Routing (CIDR) block.
 * 10.0.0.0/16 is the primary CIDR block for your VPC.
 * VPC spans all of the Availability Zones in the Region. After
 creating a VPC, you can add one or more subnets in each
