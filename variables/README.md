@@ -53,3 +53,23 @@ output "instance_id" {
 - Use locals for computed values within a module.
 - Use input variables for values that may change between deployments.
 - Document variables with descriptions and types.
+
+## Sensitive Variables
+
+- **Mark variables as sensitive using `sensitive = true` in the variable block.**
+- **Purpose:** Prevents Terraform from displaying sensitive values (like passwords or secrets) in logs and CLI output.
+
+```hcl
+variable "db_password" {
+    description = "The database password"
+    type        = string
+    sensitive   = true
+}
+```
+
+### Where Sensitive Values Appear
+
+- Sensitive values are **hidden in Terraform plan and apply output**.
+- They may still be **visible in state files** (`terraform.tfstate`), which are stored in plain text by default.
+- **Protect state files** by using remote backends (like AWS S3 with encryption) and restricting access permissions.
+- Avoid sharing or committing state files to version control.
