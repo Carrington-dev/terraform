@@ -9,3 +9,7 @@ variable "surname" {
     type = string
     description = "surname of the Repository Author"
 }
+
+variable "middle_name" {
+    # This is also valid
+}
