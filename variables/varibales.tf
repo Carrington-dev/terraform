@@ -13,3 +13,7 @@ variable "surname" {
 variable "middle_name" {
     # This is also valid
 }
+
+output "middle_name_out" {
+    value = var.middle_name
+}
